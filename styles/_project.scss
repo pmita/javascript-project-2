@@ -1,0 +1,27 @@
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: $main-color;
+  @include flex(row, center, center);
+}
+
+.container {
+  min-height: 30vh;
+  @include flex(column, space-evenly, center);
+  h1 {
+    background: black;
+    color: white;
+    padding: 1rem;
+  }
+  .btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: all 0.3s ease;
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+}
